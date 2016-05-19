@@ -82,9 +82,9 @@ public class Main {
 		
 		//Implementare Strategy
 		System.out.println("Implementare Strategy");
-		Client cl1 = new Client("Coman", "Corina", "corina.coman", "parolaCTScori", "corina.coman@gmail.com", "0723453781", "plateste, posteaza, primeste" ,null,new Visa());
-		Client cl2 = new Client("Cartianu", "Ileana", "ileana.cartianu", "parolaCTSilee", "ilee.cartianu@gmail.com", "0745453781", "posteaza, primeste" ,null,new PayPal());
-		Client cl3 = new Client("Ciobanu", "Cristina", "cristina.ciobanu", "parolaCTScrs", "cristina.ciobanu@gmail.com", "0725453781", "plateste" ,null,new MasterCard());
+		Client cl1 = new Client("Coman", "Corina", "2941001420045","F","corina.coman", "parolaCTScori", "corina.coman@gmail.com", "0723453781", "plateste, posteaza, primeste" ,null,new Visa());
+		Client cl2 = new Client("Cartianu", "Ileana","2941001420046","F","ileana.cartianu", "parolaCTSilee", "ilee.cartianu@gmail.com", "0745453781", "posteaza, primeste" ,null,new PayPal());
+		Client cl3 = new Client("Ciobanu", "Cristina","2941001420047","F","cristina.ciobanu", "parolaCTScrs", "cristina.ciobanu@gmail.com", "0725453781", "plateste" ,null,new MasterCard());
 		System.out.print(cl1.getPrenume() + " ");
 		cl1.plateste();
 		System.out.print(cl2.getPrenume() + " ");

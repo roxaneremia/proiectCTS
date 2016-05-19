@@ -7,6 +7,20 @@ public class Platforma {
 	boolean tipareste = true;
 	boolean livreaza = true;
 
+	//Constructori cu parametrii si fara
+	public Platforma(int nrOperatii, boolean publica, boolean implementeaza, boolean tipareste, boolean livreaza) {
+		super();
+		this.nrOperatii = nrOperatii;
+		this.publica = publica;
+		this.implementeaza = implementeaza;
+		this.tipareste = tipareste;
+		this.livreaza = livreaza;
+	}
+
+	public Platforma() {
+		super();
+	}
+	
 	public int getNrOperatii() {
 		return nrOperatii;
 	}

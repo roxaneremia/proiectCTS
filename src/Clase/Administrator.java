@@ -118,4 +118,11 @@ public class Administrator implements Observer {
 		System.out.println(mesaj);
 	}
 	
+	public int calculeaza_suma(int comanda,int tiparire, int livrare){
+		return comanda+tiparire+livrare;
+	}
+	
+	public int dezactivare_cont_utilizator(int u1, int u2) {
+		return u1-u2;
+	}
 }

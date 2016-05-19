@@ -87,4 +87,24 @@ public class DesignerFactory implements Subiect {
 	public void rezolva(String nume, String solutie) {
 		System.out.println("Designerul cu numele " + nume + " rezolva si ofera solutie " + solutie);
 	}
+	
+	public String programUtilizat(String material) {
+		String program = "";
+		if(material == "Afis") {
+			program = "InDesign";
+		}
+		else {
+			if(material == "Poster")
+				program = "Photoshop";
+			else 
+			{
+				if(material == "Pliant")
+					program = "Corel";
+				else {
+					throw new UnsupportedOperationException("Nu exista alt program");
+				}
+			}
+		}
+		return program;
+	}
 }

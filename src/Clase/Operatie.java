@@ -8,6 +8,10 @@ public class Operatie {
 		this.nume = nume;
 	}
 	
+	public Operatie() {
+		super();
+	
+	}
 	
 	public String getNume() {
 		return nume;

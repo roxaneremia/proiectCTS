@@ -29,7 +29,15 @@ public class Pliant implements IMaterial{
 	}
 
 	public void setFormat(String format) {
+		if(format == null)
+			throw new UnsupportedOperationException("Nu exista format");
 		this.format = format;
+	}
+	
+	public void setCuloare(String culoare) {
+		if(culoare == null)
+			throw new UnsupportedOperationException("Nu exista culoare");
+		this.culoare = culoare;
 	}
 
 	public float getPret() {
@@ -37,6 +45,8 @@ public class Pliant implements IMaterial{
 	}
 
 	public void setPret(float pret) {
+		if(pret == 0)
+			throw new UnsupportedOperationException("Nu exista pret");
 		this.pret = pret;
 	}
 
@@ -45,6 +55,8 @@ public class Pliant implements IMaterial{
 	}
 
 	public void setSpecificatii(String specificatii) {
+		if(specificatii == null)
+			throw new UnsupportedOperationException("Nu exista specificatii");
 		this.specificatii = specificatii;
 	}
 	
