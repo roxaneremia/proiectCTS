@@ -106,9 +106,9 @@ public class Client implements ModPlata, Subiect {
 		return prenume;
 	}
 	
-	public String getCnp() {
-		return cnp;
-	}
+//	public String getCnp() {
+//		return cnp;
+//	}
 	
 	public String getSex() {
 		switch(cnp.charAt(0)){
